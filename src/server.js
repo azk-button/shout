@@ -24,8 +24,8 @@ module.exports = function(options) {
 	var server = null;
 	var https = config.https || {};
 	var protocol = https.enable ? "https" : "http";
-	var port = config.port;
-	var host = config.host;
+	var port = process.env.PORT || config.port;
+	var host = process.env.HOST || config.host;
 	var transports = config.transports || ['websocket', 'polling'];
 
 	if (!https.enable){
