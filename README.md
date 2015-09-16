@@ -12,33 +12,38 @@ __What features does it have?__
 - Responsive layout — works well on your smartphone
 - _.. and more!_
 
-## Install
+## Running locally
 
-```
-sudo npm install -g shout
-```
+Click the button bellow to quickly and safely install this project on your local machine.
 
-## Usage
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azk-button/shout&ref=azkfile)
 
-When the install is complete, go ahead and run this in your terminal:
+The `Run Project` button employs `azk`, a lightweight open source orchestration tool that will automatically isolate and configure the application's environment for you.
 
-```
-shout --help
-```
+Learn more about `azk` [here](Azkfile.md).
 
-For more information, read the [documentation](http://shout-irc.com/docs/).
+## Deploying to DigitalOcean
 
-## Development setup
+After you run this project locally using [`Run Project` button](#running-locally), deploying to [DigitalOcean](http://digitalocean.com/) is very simple.
 
-To run the app from source, just clone the code and run this in your terminal:
+First, be sure you have SSH keys configured in your machine. If you don't have it yet (or if you aren't sure about it), just follow steps 1 and 2 of [this tutorial](https://help.github.com/articles/generating-ssh-keys/).
 
-```
-npm install
-grunt
-./index.js --port 8080
+Next, put your [personal access token](https://cloud.digitalocean.com/settings/applications) into a `.env` file:
+
+```bash
+$ cd path/to/the/project
+$ echo "DEPLOY_API_TOKEN=<YOUR-PERSONAL-ACCESS-TOKEN>" >> .env
 ```
 
-And if you don't have [grunt](http://gruntjs.com/getting-started) installed already, just run `npm install -g grunt-cli`.
+Then, just run the following:
+
+```bash
+$ azk shell deploy
+```
+
+The `Run Project` button employs `azk`, a lightweight open source orchestration tool that will automatically isolate and configure the application's environment for you.
+
+Find further instructions on how to deploy to DigitalOcean using `azk` [here](http://docs.azk.io/en/deploy/README.html).
 
 ## License
 
