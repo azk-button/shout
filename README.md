@@ -12,7 +12,33 @@ __What features does it have?__
 - Responsive layout — works well on your smartphone
 - _.. and more!_
 
-## Running locally
+## Install
+
+```
+sudo npm install -g shout
+```
+
+## Usage
+
+When the install is complete, go ahead and run this in your terminal:
+
+```
+shout --help
+```
+
+For more information, read the [documentation](http://shout-irc.com/docs/).
+
+## Development setup
+
+To run the app from source, just clone the code and run this in your terminal:
+
+```
+npm install
+npm run build
+npm start -- --port 8080
+```
+
+### Running locally
 
 Click the button bellow to quickly and safely install this project on your local machine.
 
@@ -22,7 +48,7 @@ The `Run Project` button employs `azk`, a lightweight open source orchestration 
 
 Learn more about `azk` [here](https://github.com/azukiapp/azk).
 
-## Deploying to DigitalOcean
+### Deploying to DigitalOcean
 
 After you run this project locally using [`Run Project` button](#running-locally), deploying to [DigitalOcean](http://digitalocean.com/) is very simple.
 
@@ -45,6 +71,9 @@ The `Run Project` button employs `azk`, a lightweight open source orchestration 
 
 Find instructions for further resources (mostly customizations) to deploy to DigitalOcean using `azk` [here](http://docs.azk.io/en/deploy/README.html).
 
+
 ## License
 
-Available under [the MIT license](http://mths.be/mit).
+Available under the [MIT License](http://mths.be/mit).
+
+Some fonts licensed under [SIL OFL](http://scripts.sil.org/OFL) and the [Apache License](http://www.apache.org/licenses/).
