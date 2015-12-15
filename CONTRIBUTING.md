@@ -32,6 +32,10 @@ Also, make sure that your PRs do not contain unnecessary commits. If you think
 some of your commits should be merged into a single one, feel free to [squash
 them](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History).
 
+Please [rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) outdated
+PRs on master to help with the reviews (rebasing is preferred over merging to
+keep a clean history in a branch/PR).
+
 Additionally, give extra care to your commit messages, as they will help us
 review your PRs as well as help other contributors in the future, when exploring
 the history. The general rules are to [use the imperative present
@@ -86,3 +90,4 @@ several labels. Here is what they mean:
 - [Mattias Erming](https://github.com/erming) (`erming` on IRC)
 - [Jocelyn Delalande](https://github.com/JocelynDelalande) (`JocelynD` on IRC)
 - [Jérémie Astori](https://github.com/astorije) (`astorije` on IRC)
+- [Paul Friederichsen](https://github.com/floogulinc) (`floogulinc` on IRC)
