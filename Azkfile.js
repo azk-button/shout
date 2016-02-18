@@ -17,7 +17,7 @@ systems({
     wait: 30,
     mounts: {
       '/azk/#{manifest.dir}': path('.'),
-      '/azk/node_modules': persistent('#{manifest.dir}/node_modules'),
+      '/azk/#{manifest.dir}/node_modules': persistent('#{manifest.dir}/node_modules'),
     },
     scalable: { default: 1 },
     http: {
